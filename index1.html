@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<script>
+    alert('Задание 1: Написать функцию f(r1,r2), вычисляющую и возвращающую площадь кольца, заключенного между кругами двух радиусов r1 и r2.');
+    function ploshad(r1, r2){ 
+        if (r1 <= r2){ 
+        return "Ошибка: радиус 1 должен быть больше радиуса 2";
+        }
+        return Math.PI * (r1 * r1 - r2 * r2);
+        }
+    let r1 =prompt('Введи r1')
+    let r2 =prompt('Введи r2')
+    alert(ploshad(r1,r2))
+</script>
+</body>
+</html>
